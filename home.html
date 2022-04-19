@@ -1,0 +1,53 @@
+<html>
+<head>
+  <meta name ="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Coursework2_WebApp</title>
+    <link rel="stylesheet" href="header.css">
+  </head>
+<body>
+
+  <header>
+    <h2>Teaching Portal</h2>
+  
+
+  <div class="topnav">
+    <a class="active" href="home.html">Create Module</a>
+    <a href="degree.html">Create Degree</a>
+    <a href="assessment.html">Create Assessment</a>
+    <a href="information.html">Information</a>
+  </div>
+</header>
+
+<article class="regular">
+  <h3>For Academics:</h3>
+  <label for="tbuser">Module Name:</label>
+  <input type="text" id="tbuser" placeholder="Enter Name" maxlength="25">
+
+  <input type="button" id="btn1 "value="Submit">
+
+<table class="output" id="output1" style="width: 100%;">
+  <tr>
+    <th>Module Name</th>
+    <th>ID</th>
+    <th>Number of Hours</th>
+    <th>Number of credits</th>
+    <th>Academic</th>
+    <th>Learnign Outcomes</th>
+  </tr>
+
+</article>
+
+<script>
+  const txt1 = document.getElementById('tbuser');
+  const btn1 = document.getElementById('btn1');
+  const txt1 = out1.getElementById('output1');
+
+  function fun1(){
+    out1.innerHTML = txt1.value;
+}
+  btn1.addEventListener('click',fun1);
+</script>
+  
+  <script src="main.js"></script>
+</body>
+</html>
