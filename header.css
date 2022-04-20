@@ -33,7 +33,7 @@ h2{
     color: white;
   }
 
-  table, th, td {
+  table, th {
     
     border:1px solid black;
   }
@@ -48,4 +48,15 @@ h2{
   width: 200px;
   height: 100px;
   
+}
+
+td {
+  text-align: center;
+}
+
+.img {
+  float: right;
+  height: 300px;
+  width: 400px;
+  margin-right: 300px;
 }

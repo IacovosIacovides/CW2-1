@@ -7,9 +7,10 @@
 <body>
 
   <header>
-    <h2>Teaching Portal</h2>
+    <!--Top header of th website-->
+    <h2>Teacher's Portal</h2>
   
-
+    <!--Navigation on the top left-->
   <div class="topnav">
     <a class="active" href="home.html">Create Module</a>
     <a href="degree.html">Create Degree</a>
@@ -17,26 +18,34 @@
     <a href="information.html">Information</a>
   </div>
 </header>
+<!--image on the right had side-->
+<img src="books.jpg" class="img" alt="stack of books">
+<!--Add Module name-->
 Module Name:
 <br>
 <input type="text" name="item" id="name" class="input"/><br />
+<!--Add Module ID-->
 Module ID:
 <br>
 <input type="text" name="quantity" id="id" class="input"/><br />
+<!--Add Module hours-->
 Hours:
 <br>
 <input type="text" name="price" id="hours" class="input"/><br /><br />
+<!--Add Module credits-->
 Credits:
 <br>
 <input type="text" name="price" id="credits" class="input"/><br /><br />
+<!--Add Module academic-->
 Academic:
 <br>
 <input type="text" name="price" id="academic" class="input"/><br /><br />
+<!--Add Module learning outcomes-->
 Learning Outcomes:
 <br>
 <input type="text" name="price" id="LO" class="input1"/><br /><br />
 <input type="button" value="Add Module +" onclick="addRow()" id="add"><br /><br />
-
+<!--table with modules-->
 <table id="table" border="1" style="width: 100%;">
     <tr>
         <th>Module Name</th>
@@ -45,6 +54,38 @@ Learning Outcomes:
         <th>Credits</th>
         <th>Academic</th>
         <th>Learning Outcomes</th>
+    </tr>
+    <tr>
+      <td>Fundamentals of UXD</td>
+      <td>CIS2148</td>
+      <td>45</td>
+      <td>100</td>
+      <td>David Walsh</td>
+      <td>Learn about UXD</td>
+    </tr>
+    <tr>
+      <td>Fundamentals of Web Coding</td>
+      <td>CIS2152</td>
+      <td>50</td>
+      <td>100</td>
+      <td>Mohammed Awais</td>
+      <td>Learn about Web Coding</td>
+    </tr>
+    <tr>
+      <td>Data Driven Design</td>
+      <td>CIS 2168 </td>
+      <td>50</td>
+      <td>100</td>
+      <td>Hari Padney</td>
+      <td>Learn about Data Driven Designs</td>
+    </tr>
+    <tr>
+      <td>Server and Client-side Scripting</td>
+      <td>CIS 2167</td>
+      <td>50</td>
+      <td>100</td>
+      <td>Tom Smith</td>
+      <td>Learn about Server and Client-side Scripting</td>
     </tr>
 </table>
 
