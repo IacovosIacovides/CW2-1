@@ -17,37 +17,37 @@
     <a href="information.html">Information</a>
   </div>
 </header>
+Module Name:
+<br>
+<input type="text" name="item" id="name" class="input"/><br />
+Module ID:
+<br>
+<input type="text" name="quantity" id="id" class="input"/><br />
+Hours:
+<br>
+<input type="text" name="price" id="hours" class="input"/><br /><br />
+Credits:
+<br>
+<input type="text" name="price" id="credits" class="input"/><br /><br />
+Academic:
+<br>
+<input type="text" name="price" id="academic" class="input"/><br /><br />
+Learning Outcomes:
+<br>
+<input type="text" name="price" id="LO" class="input1"/><br /><br />
+<input type="button" value="Add Module +" onclick="addRow()" id="add"><br /><br />
 
-<article class="regular">
-  <h3>For Academics:</h3>
-  <label for="tbuser">Module Name:</label>
-  <input type="text" id="tbuser" placeholder="Enter Name" maxlength="25">
+<table id="table" border="1" style="width: 100%;">
+    <tr>
+        <th>Module Name</th>
+        <th>Module ID</th>
+        <th>Hours</th>
+        <th>Credits</th>
+        <th>Academic</th>
+        <th>Learning Outcomes</th>
+    </tr>
+</table>
 
-  <input type="button" id="btn1 "value="Submit">
-
-<table class="output" id="output1" style="width: 100%;">
-  <tr>
-    <th>Module Name</th>
-    <th>ID</th>
-    <th>Number of Hours</th>
-    <th>Number of credits</th>
-    <th>Academic</th>
-    <th>Learnign Outcomes</th>
-  </tr>
-
-</article>
-
-<script>
-  const txt1 = document.getElementById('tbuser');
-  const btn1 = document.getElementById('btn1');
-  const txt1 = out1.getElementById('output1');
-
-  function fun1(){
-    out1.innerHTML = txt1.value;
-}
-  btn1.addEventListener('click',fun1);
-</script>
-  
   <script src="main.js"></script>
 </body>
 </html>

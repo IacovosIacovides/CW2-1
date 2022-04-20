@@ -62,3 +62,34 @@ function renderHTML(data){
   moduleContainer.insertAdjacentHTML('beforeend', htmlString);
 
 }
+
+function addRow() {
+  "use strict";
+
+   var table = document.getElementById("table");
+   
+   var row= document.createElement("tr");
+   console.log(row);
+   var td1 = document.createElement("td");
+   var td2 = document.createElement("td");
+   var td3 = document.createElement("td");
+   var td4 = document.createElement("td");
+   var td5 = document.createElement("td");
+   var td6 = document.createElement("td");        
+
+   td1.innerHTML = document.getElementById("name").value;
+   td2.innerHTML  = document.getElementById("id").value;
+   td3.innerHTML  = document.getElementById("hours").value;
+   td4.innerHTML  = document.getElementById("credits").value;
+   td5.innerHTML  = document.getElementById("academic").value;
+   td6.innerHTML  = document.getElementById("LO").value;
+
+   row.appendChild(td1);
+   row.appendChild(td2);
+   row.appendChild(td3);
+   row.appendChild(td4);
+   row.appendChild(td5);
+   row.appendChild(td6);
+
+   table.children[0].appendChild(row);
+};

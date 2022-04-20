@@ -37,3 +37,15 @@ h2{
     
     border:1px solid black;
   }
+
+.input{
+  background-color: #D3D3D3;
+  width: 200px;
+}
+
+.input1{
+  background-color: #D3D3D3;
+  width: 200px;
+  height: 100px;
+  
+}
