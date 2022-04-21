@@ -109,14 +109,17 @@ function addRow1() {
    var td3 = document.createElement("td");
    var td4 = document.createElement("td");
    var td5 = document.createElement("td");
-   var td6 = document.createElement("td");  
+   var td6 = document.createElement("td");
+   var td7 = document.createElement("td");  
+ 
 
-   td1.innerHTML = document.getElementById("title").value;
-   td2.innerHTML  = document.getElementById("number").value;
-   td3.innerHTML  = document.getElementById("lo").value;
-   td4.innerHTML  = document.getElementById("volume").value;
-   td5.innerHTML  = document.getElementById("weight").value;
-   td6.innerHTML  = document.getElementById("date").value;
+   td1.innerHTML = document.getElementById("modname").value;
+   td2.innerHTML = document.getElementById("title").value;
+   td3.innerHTML  = document.getElementById("number").value;
+   td4.innerHTML  = document.getElementById("lo").value;
+   td5.innerHTML  = document.getElementById("volume").value;
+   td6.innerHTML  = document.getElementById("weight").value;
+   td7.innerHTML  = document.getElementById("date").value;
 
    row.appendChild(td1);
    row.appendChild(td2);
@@ -124,6 +127,7 @@ function addRow1() {
    row.appendChild(td4);
    row.appendChild(td5);
    row.appendChild(td6);
+   row.appendChild(td7);
 
    table.children[0].appendChild(row);
 }
@@ -159,4 +163,31 @@ function addRow2() {
    table.children[0].appendChild(row);
 }
 
+function addRow3() {
+  "use strict";
 
+   var table = document.getElementById("table");
+   
+   var row= document.createElement("tr");
+   console.log(row);
+   var td1 = document.createElement("td");
+   var td2 = document.createElement("td");
+   var td3 = document.createElement("td");
+   var td4 = document.createElement("td");
+   
+
+   td1.innerHTML = document.getElementById("name").value;
+   td2.innerHTML  = document.getElementById("id").value;
+   td3.innerHTML  = document.getElementById("start").value;
+   td4.innerHTML  = document.getElementById("finish").value;
+   
+
+   row.appendChild(td1);
+   row.appendChild(td2);
+   row.appendChild(td3);
+   row.appendChild(td4);
+   
+  
+
+   table.children[0].appendChild(row);
+}
